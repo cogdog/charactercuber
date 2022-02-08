@@ -22,7 +22,7 @@ function spawn(info) {
 	$("#spawnfriend").text( info.nat );
 	
 	strwords = info.location.street.name.split(' ');
-	$("#spawnborn").text( titleCase(strwords[1]) );
+	$("#spawnborn").text( titleCase(strwords[0]) );
 	$("#spawnstate").text( info.location.state );
 }
 
