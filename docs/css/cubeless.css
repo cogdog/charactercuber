@@ -1,0 +1,17 @@
+#spawnphoto {
+	border-radius: 50%;
+	float: left;
+	margin-right: 1em;
+}
+
+#friendphoto {
+	border-radius: 50%;
+	float: right;
+	margin-left: 1em;
+}
+
+.userspec {
+	font-weight: bold;
+}
+
+
