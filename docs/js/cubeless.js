@@ -11,6 +11,7 @@ function titleCase(str) {
 
 // spawn all of the data for a new cubed person into the page
 function spawn(info) {
+	// console.log(info);
 	$("#spawnphoto").attr( "src", info.picture.large );
 	$("#spawnname").text( titleCase(info.name.first) + ' ' + titleCase(info.name.last) );
 	$("#spawnplace").text( titleCase(info.location.city) + ', ' + titleCase(info.location.state) );
@@ -20,9 +21,9 @@ function spawn(info) {
 	$("#spawnalt").text( info.login.username );
 	$("#spawnfriend").text( info.nat );
 	
-	strwords = info.location.street.split(' ');
+	strwords = info.location.street.name.split(' ');
 	$("#spawnborn").text( titleCase(strwords[1]) );
-	$("#spawnstate").text( titleCase(info.location.state) );
+	$("#spawnstate").text( info.location.state );
 }
 
 function cubeit() {
